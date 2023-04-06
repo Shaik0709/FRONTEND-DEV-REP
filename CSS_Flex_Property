@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex DIrection Property</title>
+    <style>
+        .flex-Container {
+            display: flex;
+            flex-direction: column;
+            background-color: yellowgreen;
+        }
+
+        .flex-Container-1 {
+            display: flex;
+            flex-flow: row wrap;
+
+            background-color: yellowgreen;
+        }
+
+
+        .flex-Container-2 {
+            display: flex;
+            flex-direction: row;
+            background-color: yellowgreen;
+            justify-content: center;
+
+        }
+
+        .flex-container-3 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            background-color: yellowgreen;
+            align-items: center;
+        }
+
+        .flex-container-4 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            background-color: yellowgreen;
+            align-content: center;
+        }
+        .flex-Container-5 {
+            display: flex;
+            flex-flow: row wrap;
+            align-self: auto;
+            background-color: yellowgreen;
+        }
+
+        div {
+            background-color: wheat;
+            width: 80px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+
+        }
+
+        .head {
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 class="head">CSS_FLEX_ PROPERTY</h1>
+    </center>
+    <!-- Flex column Direction -->
+    <h1>The Flex Direction : Column</h1>
+    <span class="flex-Container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </span><br>
+    <br>
+    <hr>
+    <!-- Flex Wrap -->
+    <h1>The Flex - Wrap Direction : Row</h1>
+    <span class="flex-Container-1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </span>
+    <br><br>
+    <hr>
+    <!-- Flex column Direction -->
+    <h1>The Flex Direction : Row Justify-Content : Center</h1>
+    <span class="flex-Container-2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </span>
+    <br>
+    <hr>
+    <!-- Flex column Direction -->
+    <h1>The Flex Direction : Row Align-Items : Center</h1>
+    <span class="flex-container-3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </span>
+    <br>
+    <hr>
+
+    <h1>The Flex Direction : Row Align-Content : Center</h1>
+    <span class="flex-container-4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </span>
+    <br>
+    <hr>
+
+    <h1>Flex item properties : order
+    </h1>
+    <span class="flex-Container-1">
+        <div style="order: 4;">1</div>
+        <div style="order: 3;">2</div>
+        <div style="order: 1;">3</div>
+        <div style="order: 5;">4</div>
+        <div style="order: 2;">5</div>
+    </span>
+    <br>
+    <hr>
+    <h1>Flex item properties : Grow and srink
+    </h1>
+    <span class="flex-Container-1">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-grow: 3;">3</div>
+        <div>4</div>
+        <div>5</div>
+    </span>
+    <br>
+    <hr>
+    <h1>Flex item properties : Align self
+    </h1>
+    <span class="flex-Container-1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </span>
+    <br>
+    <hr>
+</body>
+<br>
+<br>
+<hr>
+
+</html>
