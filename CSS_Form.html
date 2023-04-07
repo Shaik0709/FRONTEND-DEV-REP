@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+    padding: 0px 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: solid;
+    font-weight: 900;
+}
+
+div {
+    padding: 5px 5px;
+    background-color: rgb(164, 206, 147);
+    width: auto;
+    color: white;
+    line-height: 10%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+form {
+    background-color: rgb(238, 239, 235);
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0px 80px 5px;
+    font-size: large;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input[type="submit"] {
+    background-color: rgb(164, 206, 147);
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 75%;
+}
+
+input[type="reset"] {
+    background-color: red;
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(0, 176, 76);
+}
+
+input[type="reset"]:hover {
+    background-color: rgb(191, 0, 0);
+}
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Contact Form</h1>
+        <p id="Subheading">Please fill all the text in the fields.</p>
+    </div>
+    <form action="">
+
+        <p class="name">
+            Your Name:<br>
+            <input type="text" placeholder="Your Full Name">
+        </p>
+        <p class="email"> Your Email:<br>
+            <input type="email" name="email" id="" placeholder="Enter your Email">
+        </p>
+        <p class="number">
+            Your mobile number:<br>
+            <input type="text" placeholder="Enter your mobile number">
+        </p>
+        <p class="message">
+            Your message to us:<br>
+            <textarea name="message" id="" cols="50" rows="5" placeholder="Enter your query here"></textarea>
+        </p>
+        <p>Select how you want updates:<br>
+            <select name="Select" id="">
+            <option value="Choose">--Please choose one option--</option>
+            <option value="op1">Message</option>
+            <option value="op2">Call</option>
+            <option value="op3">Email</option>
+        </select>
+        </p>
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
