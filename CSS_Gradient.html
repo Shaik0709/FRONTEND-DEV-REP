@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css gradients</title>
+        <style>
+        #grad1 {
+            width: 150px;
+            height: 150px;
+            background-image: radial-gradient(Closest-side at 50%, red, blue, green);
+            padding: 5px;
+        }
+
+        #grad2 {
+            width: 150px;
+            height: 150px;
+            background-image: radial-gradient(Farthest-side at 50%, red, blue, green);
+            padding: 5px;
+        }
+
+         #grad3 {
+            width: 150px;
+            height: 150px;
+            background-image: radial-gradient(Closest-corner at 50%, red, blue, green);
+            padding: 5px;
+        }
+
+        #grad4 {
+            width: 150px;
+            height: 150px;
+            background-image: radial-gradient(Farthest-corner at 50%, red, blue, green);
+            padding: 5px;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: larger;
+            background-color: beige;
+        }
+    </style>
+</head>
+<center>
+<body>
+    <h3>Closest-side</h3>
+    <div id="grad1"></div>
+    <br>
+    <h3>Farthest-side</h3>
+    <div id="grad2"></div>
+    <br>
+    <h3>Closest-corner</h3>
+    <div id="grad3"></div>
+    <br>
+    <h3>Farthest-corner</h3>
+    <div id="grad4"></div>
+</body>
+</center>
+    <style>
+        .linear {
+            background-image: linear-gradient(to right, orange, yellow, rgba(255, 0, 0, 0));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            font-size: 20px;
+            background-size: cover;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .radial {
+            background-image: radial-gradient(orange, yellow, rgb(255, 0, 0));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            font-size: 20px;
+            background-size: cover;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> CSS GRADIENTS - LINEAR </h1>
+    <div class="linear">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veniam molestiae labore corporis cupiditate
+        quaerat iusto, adipisci at necessitatibus suscipit illo. Minima quaerat ab ea reiciendis blanditiis eos fugiat
+        error?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non necessitatibus earum vero numquam excepturi rerum?
+        Quidem asperiores neque, voluptates, sint voluptatem adipisci mollitia commodi voluptatum aliquam consequuntur,
+        porro praesentium quam.</div>
+</body>
+
+<body>
+    <h1> CSS GRADIENTS - RADIAL </h1>
+    <div class="radial">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi veniam molestiae labore corporis cupiditate
+        quaerat iusto, adipisci at necessitatibus suscipit illo. Minima quaerat ab ea reiciendis blanditiis eos fugiat
+        error?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non necessitatibus earum vero numquam excepturi rerum?
+        Quidem asperiores neque, voluptates, sint voluptatem adipisci mollitia commodi voluptatum aliquam consequuntur,
+        porro praesentium quam.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad in harum reiciendis, dolorem aliquid nam
+        repudiandae explicabo alias quam pariatur, non expedita nisi, cum animi fuga sit accusantium possimus natus.
+    </div>
+</body>
+
+</html>
+<!-- Different Types of Gradient  -->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial-gradient</title>
+    <style>
+        #grad1 {
+            width: 150px;
+            height: 150px;
+            background-image: radial-gradient(Closest-side at 50%, red, blue, green);
+            padding: 5px;
+        }
+
+        #grad2 {
+            width: 150px;
+            height: 150px;
+            background-image: radial-gradient(Farthest-side at 50%, red, blue, green);
+            padding: 5px;
+        }
+
+         #grad3 {
+            width: 150px;
+            height: 150px;
+            background-image: radial-gradient(Closest-corner at 50%, red, blue, green);
+            padding: 5px;
+        }
+
+        #grad4 {
+            width: 150px;
+            height: 150px;
+            background-image: radial-gradient(Farthest-corner at 50%, red, blue, green);
+            padding: 5px;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: larger;
+            background-color: beige;
+        }
+    </style>
+</head>
+<center>
+<body>
+    <h3>Closest-side</h3>
+    <div id="grad1"></div>
+    <br>
+    <h3>Farthest-side</h3>
+    <div id="grad2"></div>
+    <br>
+    <h3>Closest-corner</h3>
+    <div id="grad3"></div>
+    <br>
+    <h3>Farthest-corner</h3>
+    <div id="grad4"></div>
+</body>
+</center>
+</html>  
+-->
+<!-- Conic Gradient 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Gradient</title>
+    <style>
+        body {
+            background-image: conic-gradient(blue, orange, red);
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+        h1 {
+            background-color: beige;
+        }
+        p {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               font-weight: 600;
+        }
+    </style>
+</head>
+<center>
+
+    <body>
+        <h1>CSS CONIC GRADIENT</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempora fugit iure quidem possimus quas
+            assumenda
+            sunt! Saepe ad quibusdam earum iure? Quaerat beatae quas nulla ex. Laboriosam, culpa dolorum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis libero temporibus molestias expedita
+            minus architecto, officia earum atque pariatur, unde ducimus impedit. Sunt officiis, nam sapiente facere, id
+            alias dolore porro, quod debitis cupiditate dolorum? Totam omnis cupiditate impedit, eaque accusantium dicta
+            earum non, sint autem, iusto sapiente! Tempora.
+    </body>
+</center>
+
+</html>
+
+-->
