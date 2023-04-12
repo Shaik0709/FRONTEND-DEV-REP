@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="style.css"> -->
+    <title>Variable</title>
+</head>
+
+<body>
+    <h1 style="color: rebeccapurple;text-decoration: underline;">Js Variables</h1>
+    <h3>It is container to storing data </h3>
+    <p> Declaration (Var , let ,Const) <br>
+        Assignment (= Assignment Operator )
+    </p>
+    <p>
+        Name must start with Letter (a to z ) or ( A to Z ) ,
+        Underscore (_) or ($) dollar sign ... <br>
+        After First letter we can use digit ( 0 to 9)
+        <!-- Ex. value1 --> <br>
+        Js valuess are Case Sensitive
+        <!-- e and E are Different variables -->
+    </p>
+    <p id="p1" style="color: blue; border: 2px solid;"></p>
+    <p id="p2" style="color: lightblue; border: 2px solid black;"></p>
+    <p id="p3" style="color: orange; border:  2px solid yellowgreen;"></p>
+
+    <script>
+
+        let age = 22; // numbers
+        console.log(age);
+        let studentName = "Akber";//strings
+        console.log(studentName);
+        let student = true // Booleans
+        console.log(student);
+        document.getElementById("p1").innerHTML = "Hello " + studentName;
+        document.getElementById("p2").innerHTML = "You are  " + age + " years Old ...";
+        document.getElementById("p3").innerHTML = "Enrolled  " + student;
+
+
+        var data = 200;//gloabal variable  
+        function a() {
+            document.writeln(data);
+        }
+        function b() {
+            document.writeln(data);
+        }
+        a();//calling JavaScript function
+        b();
+
+    </script>
+</body>
+
+</html>
