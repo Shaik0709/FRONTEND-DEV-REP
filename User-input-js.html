@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input </title>
+</head>
+<body>
+     <!-- How to accept user input -->
+    <label >Enter Your Name : </label>
+    <input type="text" id="Ntext">
+    <button type="button " id="Nbutton">Submit</button>
+    <script>
+        // Easy way with window prompt 
+        let username = window.prompt("What's Your Name...");
+        console.log(username);
+    //   Difficult way with HTML Text box 
+        document.getElementById("Nbutton").onclick=function(){
+            username = document.getElementById("Ntext").value;
+            console.log(username);
+        }
+     </script>
+</body>
+</html>
