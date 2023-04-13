@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operator</title>
+    <style>
+        div {
+            background-color: beige;
+        }
+
+        div:hover {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Arithemtic Operator</h1>
+    <p>It is combination of Operand ( Value , vatiable etc.)
+        Operators ( + - * / % )
+        that can be evalved...
+    </p>
+    <div>
+        <li>Addition</li>
+        <li>subtraction</li>
+        <li>Multiplication</li>
+        <li>Divide</li>
+        <li>Remainder</li>
+    </div>
+
+    <script>
+        let student = 20;
+        // student = student + 1; student+=1;
+        // student = student - 1; student-=1;
+        // student = student * 2; student*=1;
+        // student = student / 1; student/=1;
+        let ExtraStudent = student % 3;
+        console.log(ExtraStudent);
+        /*
+        Operator Precedence
+        1. Parenthesis ()
+        2. Exponents
+        3. Multiplication & Division
+        4. Addition & Subtraction 
+        */
+        let pre = 1 + 2 * (3 + 4);
+        // 1 + 2 * (7) = 15 
+        console.log(pre);
+        let pre1 = (1 + 2) * (3 + 4);
+        // (3) * (7) = 21 
+        console.log(pre1);
+    </script>
+</body>
+
+</html>
