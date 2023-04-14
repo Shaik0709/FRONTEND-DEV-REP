@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Js </title>
+    <style>
+        h4:active,h2:hover {
+            color:  orange;
+        } 
+    </style>
+</head>
+<body>
+    <h2>Const - A variable that can't be changed </h2>
+    <h4>To view the Radius of circle 
+        Left click to open the Inspect and choose the Console 
+    </h4>
+    <script>
+        const PI = 3.14159;
+        // use const word and make the Capt.
+        let radius ;
+        let circumfrence ;
+        radius = window.prompt("Enter the Radius of a Circle ");
+        radius = Number(radius);
+        circumfrence = 2 * PI * radius;
+        console.log("The Circumfrence is :",circumfrence);
+    </script>
+</body>
+</html>
