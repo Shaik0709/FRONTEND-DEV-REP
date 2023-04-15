@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Slicing Methods</title>
+</head>
+<body>
+    <h2> String Slicing -  Extracts a Section of a string
+        and returns it as a new string ,
+        without modifiying the Original String </h2>
+        <h3>To view Right Click the Inspect and view in console</h3>
+    <!-- 
+        String Slicing -  Extracts a Section of a string
+        and returns it as a new string ,
+        without modifiying the Original String 
+     -->
+     
+    <script>
+let FullName ="Shaik Faridhudeen";
+     let FirstName ;
+     let LastName ;
+    //  FirstName = FullName.slice(0,5);
+    //  LastName = FullName.slice(6);
+    FirstName=FullName.slice(0,FullName.indexOf(" "));
+    LastName=FullName.slice(FullName.indexOf(" ")+1);
+
+     console.log("FirstName :", FirstName);
+     console.log("LastName  :", LastName);
+    </script>
+</body>
+</html>
