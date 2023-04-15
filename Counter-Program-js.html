@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #countLabel{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    border: 5px solid black;
+    background-color: beige;
+    width: auto
+}
+.Btn {
+    align-items: center;
+}
+    </style>
+</head>
+<body >
+    <label id="countLabel">0</label><br>
+    <button id="decreaseBtn" style="background-color: orange;">decrease</button> 
+    <button id="resetBtn" style="color: white; background-color: red;">reset</button>
+    <button id="increaseBtn" style="background-color: greenyellow;">increase</button>
+    <script>
+        let count = 0;
+
+document.getElementById("decreaseBtn").onclick = function(){
+    count-=1;
+    document.getElementById("countLabel").innerHTML = count;
+} 
+
+document.getElementById("resetBtn").onclick = function(){
+    count=0;
+    document.getElementById("countLabel").innerHTML = count;
+}
+
+document.getElementById("increaseBtn").onclick = function(){
+    count+=1;
+    document.getElementById("countLabel").innerHTML = count;
+}
+    </script>
+</body>
+</html>
+
