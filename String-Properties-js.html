@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful string Properties and Methods</title>
+</head>
+<body>
+    <h2>Useful String Properties and Methods</h2>
+    <h4 style="background-color: lightblue;">To view Open Inspect and click the console Tab</h4>
+    <script>
+        let userName = " Shaik Faridhudeen ";
+        let phoneNumber = "123-456-789";
+        console.log("length of the string UName :", userName.length);
+        console.log("Char at string (3) is" , userName.charAt(3));
+        console.log(userName.indexOf("i"));
+        console.log(userName.lastIndexOf("i"));
+        console.log("Upper Case :", userName.toLocaleUpperCase());
+        console.log("Lower Case :", userName.toLocaleLowerCase());
+        console.log("trim :", userName.trim());
+        phoneNumber = phoneNumber.replaceAll("-","/");
+        console.log(phoneNumber);   
+    </script>
+</body>
+</html>
