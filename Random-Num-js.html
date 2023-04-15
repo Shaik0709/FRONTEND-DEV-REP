@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number 3 Dice Roll </title>
+    <style>
+        #xlabel , #ylabel , #zlabel ,#rollBtn{
+    text-align: center;
+            font-size: 25px;
+        }
+        h1 {
+            border: 3px solid;
+            background-color: beige;
+            font-family:'Courier New', Courier, monospace;
+        }
+        #rollBtn:hover {
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<center>
+<body>
+    <h1>Click the Roll Button to Get a 3 Dice Random Number Between 0 to 6 </h1>
+    <br>
+    <label id="xlabel"> </label>
+    <label id="ylabel"> </label>
+    <label id="zlabel"> </label><br>
+    <br>
+    <hr>
+    <button type="button" id="rollBtn">Roll </button><br>
+<script>
+    let x;
+    let y;
+    let z;
+    document.getElementById("rollBtn").onclick = function()
+{
+    x = Math.floor(Math.random()*6)+1;
+    document.getElementById("xlabel").innerHTML=x;
+    y = Math.floor(Math.random()*6)+1;
+    document.getElementById("ylabel").innerHTML=y;
+    z = Math.floor(Math.random()*6)+1;
+    document.getElementById("zlabel").innerHTML=z;
+
+}
+</script>
+</body></center>
+</html>
