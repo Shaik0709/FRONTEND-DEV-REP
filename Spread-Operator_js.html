@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator in JS</title>
+</head>
+
+<body>
+    <h2>
+        It allows an Iterable such as array or string to be explained in places where zero or more arguments are
+        expected (Unpack the element)
+
+    </h2>
+    <script>
+        let UserName = "Shaik Faridhudeen"
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let maximum = Math.max(...numbers);
+        numbers.pop(); // It removes the Last element in string
+        console.log(...numbers);
+
+        console.log("Maximum - ", maximum); // MAX - 9 
+        console.log(...UserName);
+/*
+        let class1 = ["Spongebob", "Patrick", "Sandy"];
+        let class2 = ["Squidward", "Mr.Krabs", "Plankton"];
+        class1.push(...class2);
+        console.log(...class1);
+        */
+
+
+    </script>
+</body>
+
+</html>
