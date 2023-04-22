@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Function </title>
+    <style>
+        h1 ,span{
+            color: orange;
+            text-decoration: underline black;
+        }
+        h1:hover ,span:hover{
+            color: red;
+            text-decoration: underline yellowgreen;
+            text-transform:uppercase;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nested Function</h1>
+    <h3>Function inside other function <br> Outer function have access to Inner function <br>
+        Inner function are <span>"Hidden"</span>  from Outside from the Outer Function...</h3>
+    <script>
+        let UserName = "Shaik Faridhudeen";
+        let UserInbox = 1;
+        login();
+        function login() {
+            displayUserName();
+            displayUserInbox();
+            function displayUserName() {
+                console.log(`Welcome , ${UserName}`);
+            }
+            function displayUserInbox() {
+                console.log(`You have '${UserInbox}' New Messages in Your Inbox`);
+            }
+        }
+    </script>
+</body>
+
+</html>
