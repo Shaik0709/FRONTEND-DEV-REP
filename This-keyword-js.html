@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword in JS</title>
+</head>
+
+<body>
+    <h2> This - Refrence to a particular Object
+        <br>
+        the object Depends on the immediate Context
+    </h2>
+    <script>
+        const car1 = {
+            model: "Mustang",
+            color: "red",
+            year: 2023,
+            drive: function () {
+                console.log(`You Drive the '${this.model}'`);
+            },
+        }
+        const car2 = {
+            model: "Corvette",
+            color: "Blue",
+            year: 2024,
+            drive: function () {
+                console.log(`You  Drive the '${this.model}'`);
+            },
+        }
+        car1.drive();
+        car2.drive();
+
+    </script>
+</body>
+
+</html>
