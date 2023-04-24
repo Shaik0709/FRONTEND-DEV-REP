@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class in Javascript</title>
+</head>
+<body>
+  <script>
+      class Player {
+        score = 0;
+        pause ()
+        {
+            console.log("You Paused the game ...");
+        }
+        exit ()
+        {
+            console.log("you Exited the game ...");
+        }
+      }
+      const Player1 = new Player();
+      const Player2 = new Player();
+      const Player3 = new Player();
+      const Player4 = new Player();
+      Player1.score +=1;
+      console.log(Player1.score);
+      console.log(Player2.score);
+      Player1.pause();
+      Player2.exit();
+  </script>
+</body>
+</html>
