@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps in Js </title>
+</head>
+
+<body>
+   <h1> Map = object that holds key-value pairs of any data type</h1>
+
+    <script>
+
+        const store = new Map([
+            ["t-shirt  ", 20],
+            ["jeans    ", 30],
+            ["socks    ", 10],
+            ["underwear", 50]
+        ]);
+
+        // store.get("t-shirt");
+        store.set("hat      ", 40); // To add 
+        // store.delete("hat"); // To delete 
+        // console.log(store.has("underwear"));
+        console.log(store.size); //To check the size of the map list
+
+        store.forEach((value, key) => console.log(`${key} $${value}`));
+    </script>
+</body>
+
+</html>
