@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <div><h2>A group of Properties and Methods</h2> <br>
+    Properties - What an Object has <br>
+Methods - What an Object can do  <br>
+Use.to Access the Properties and Methods</div>
+    <script>
+        const car1 ={
+            model  : "Mustang" ,
+            color : "red",
+            year : 2023,
+            drive : function()
+            {
+                 console.log("You can Drive the Car");
+            },
+            brake : function ()
+            {
+                console.log("You step on the Brakes");
+            }
+        } 
+        const car2 ={
+            model  : "Corvette" ,
+            color : "Blue",
+            year : 2024,
+            drive : function()
+            {
+                 console.log("You can Drive the Car");
+            },
+            brake : function ()
+            {
+                console.log("You step on the Brakes");
+            }
+        }
+       console.log(car1.model);
+        console.log(car1.color);
+        console.log(car1.year);
+        car1.drive();
+        car1.brake(); 
+        console.log(car2.model);
+        console.log(car2.color);
+        console.log(car2.year);
+        car2.drive();
+        car2.brake();
+
+    </script>
+</body>
+</html>
