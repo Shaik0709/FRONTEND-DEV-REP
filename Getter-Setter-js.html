@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getters and Setters</title>
+</head>
+
+<body>
+    <h3>GET - Binds an Object Property to a Functions when that Property is accused</h3>
+    <h3>SET - Binds an Object Property to a Functions when that Property is Assigned a Value</h3>
+
+    <script>
+        // class car {
+        //     constructor(Power) {
+        //         this.gas = 25;
+        //         this.Power = Power;
+        //     }
+        //     get Power() {
+        //         return `${this.Power} Hp`;
+        //     }
+        //     get gas() {
+        //         return `${this.gas}L (${this.gas / 50 * 100}%)`;
+        //     }
+        //     set gas(Value) {
+        //         if (Value > 50) {
+        //             Value = 50;
+        //         }
+        //         else if (Value < 0) {
+        //             Value = 0;
+        //         }
+        //         this.Value = Value;
+        //     }
+        // }
+        // let car = new Car(400);
+        // car.gas = 100;
+        // console.log(Car.Power);
+        // console.log(Car.gas);
+        class Car {
+            constructor(power) {
+                this._gas = 25;
+                this._power = power;
+            }
+            get power() {
+                return `${this._power}hp`;
+            }
+            get gas() {
+                return `${this._gas}L (${this._gas / 50 * 100}%)`;
+            }
+            set gas(value) {
+                if (value > 50) {
+                    value = 50;
+                }
+                else if (value < 0) {
+                    value = 0;
+                }
+                this._gas = value;
+            }
+        }
+
+        let car = new Car(400);
+
+        car.gas = 100;
+
+        console.log(car.power);
+        console.log(car.gas);
+    </script>
+</body>
+
+</html>
