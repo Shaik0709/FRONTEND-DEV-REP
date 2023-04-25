@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super in js</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+        }
+        class Rabbit extends Animal {
+            constructor(name, age, runspeed) {
+                super(name, age);
+                this.runspeed = runspeed;
+            }
+        }
+        class Fish extends Animal {
+            constructor(name, age, swimspeed) {
+                super(name, age);
+                this.swimspeed = swimspeed;
+            }
+        }
+        class Hawk extends Animal {
+            constructor(name, age, flyspeed) {
+                super(name, age);
+                this.flyspeed = flyspeed;
+            }
+        }
+        const rabbit = new Rabbit("Rabbit", 1, 80);
+        const fish = new Fish("Fish", 2, 180);
+        const hawk = new Hawk("Hawk", 3, 200);
+        console.log(Rabbit.name);
+        console.log(Hawk.name);
+        console.log(fish.age);
+        console.log(hawk.flyspeed);
+    </script>
+</body>
+
+</html>
