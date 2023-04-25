@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling in JS </title>
+</head>
+
+<body>
+    <div>
+        Error - Object with a Description of Something that went wrong
+        Throw - Executes a User-Defined Error
+    </div>
+    <script>
+        try {
+            let x = window.prompt("Enter a # : ");
+            x = Number(x);
+            if (isNaN(x)) throw "That wasn't a Number !";
+            if (x == "") throw " That was Empty ..!";
+            console.log(`${x} is a Number ..`);
+        }
+        catch (error) {
+            console.log(error);
+        }
+        finally {
+            console.log("This always Executes");
+        }
+    </script>
+</body>
+
+</html>
