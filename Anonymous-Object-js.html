@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Object in Javascript</title>
+</head>
+
+<body>
+    <div>Object without a name Not a Directly Refrenced less Syntax .<br> No Need for Unique Names</div>
+    <script>
+        class Card {
+            constructor(value, suit) {
+                this.value = value;
+                this.suit = suit;
+            }
+        }
+        let Cards = [new Card("A", "Hearts"),
+        new Card("A", "Spades"), new Card("A", "Clubs"),
+        new Card("2", "Hearts"), new Card("2", "Spades"),
+        new Card("2", "Diamonds"), new Card("2", "Clubs"),];
+        Cards.forEach(Card => console.log(`${Card.value} ${Card.suit}`));
+    </script>
+</body>
+
+</html>
