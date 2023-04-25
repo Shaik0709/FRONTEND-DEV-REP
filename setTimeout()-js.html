@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout() in Js </title>
+    <style>
+        h1 {
+            background-color: beige;
+
+        }
+
+        button {
+            background-color: beige;
+            font-size: 15px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>CryptoCurrency</h1>
+        <h4>Invokes a function after a Number of Milliseconds Asynchronous Function
+            (Doesn't Pause Execution )...
+        </h4>
+        <button id="myButton">Buy</button>
+    </center>
+    <script>
+        let item = "CryptoCurrency";
+        let Price = 602.44;
+        let timer1 = setTimeout(firstMessage, 3000, item, Price);
+        let timer2 = setTimeout(secondMessage, 6000);
+        let timer3 = setTimeout(ThirdMessage, 9000);
+        function firstMessage(item, Price) {
+            alert(`Buy this ${item} for $${Price}`);
+
+        }
+        function secondMessage() {
+            alert(`This is Not a SCAM  ... !`);
+        }
+        function ThirdMessage() {
+            alert(`DO It Now !`);
+        }
+        document.getElementById("myButton").onclick = function () {
+            clearTimeout(timer1);
+            clearTimeout(timer2);
+            clearTimeout(timer3);
+            alert(`Thanks for Purchasing .. <3`)
+        }
+    </script>
+</body>
+
+</html>
