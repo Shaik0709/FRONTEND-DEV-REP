@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Js</title>
+</head>
+
+<body>
+    <script>
+        // promise = object that encapsulates the result of an asynchronous operation
+        //                   let asynchronous methods return values like synchronous methods
+        //                   "I promise to return something in the future"
+
+        //           the STATE is 'pending' then: 'fulfilled' or 'rejected'
+        //           the RESULT is what can be returned
+        //           2 parts producing & consuming
+
+        // ------------- Example 1 -------------
+        const promise = new Promise((resolve, reject) => {
+
+            let fileLoaded = true; // file loaded
+            // let fileLoaded = false; // file NOT loaded
+
+
+            if (fileLoaded) {
+                resolve("File loaded");
+            }
+            else {
+                reject("File NOT loaded");
+            }
+        });
+
+        promise.then(value => console.log(value))
+            .catch(error => console.log(error));
+
+// ------------- Example 2 -------------
+
+        /*
+          const wait = time => new Promise(resolve => {
+           setTimeout(resolve, time);
+          });
+          
+          wait(3000).then(() => console.log("Thanks for waiting For # 3 Sec..!"));
+      
+        */
+    </script>
+</body>
+
+</html>
