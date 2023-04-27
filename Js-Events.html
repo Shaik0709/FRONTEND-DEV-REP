@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+    <style>
+        #myDiv {
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <button id="myButton">button</button>
+        <input id="myText"> <br>
+        <br>
+        <div id="myDiv"> </div>
+    </center>
+    <script>
+        //  const element = document.getElementById("myButton");
+        // const element = document.body;
+        // const element = document.getElementById("myText");
+        const element = document.getElementById("myDiv");
+
+        element.onclick = doSomething;
+        element.onload = doSomething;
+        element.onchange = doSomething;
+        element.onmouseover = doSomething;
+        element.onmouseout = doSomethingElse;
+        element.onmousedown = doSomething;
+        element.onmouseup = doSomethingElse;
+
+        function doSomething() {
+            // alert("You did something!");
+            element.style.backgroundColor = "red";
+        }
+        function doSomethingElse() {
+            //alert("You did something!");
+            element.style.backgroundColor = "green";
+        }
+    </script>
+</body>
+
+</html>
