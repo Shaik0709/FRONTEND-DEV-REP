@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Window </title>
+    <style>
+        button:hover {
+            background-color: lightblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="mybutton" style="border-radius: 5px;">Press</button>
+    <script>
+        // console.dir(window);
+        // console.log(window.location.href);
+        // window.location.href = "https://www.google.com";
+        // console.log(window.outerWidth);
+        // console.log(window.outerHeight);
+        // console.log(innerWidth);
+        // console.log(innerHeight);
+        // console.log(window.location.hostname);
+        // console.log(window.location.pathname);
+        // const myButton = document.getElementsById("myButton");
+        // myButton.addEventListener("click",()=> window.close());
+        // myButton.addEventListener("click",()=> window.print());
+        // window.alert("Hello !");
+        // window.confirm("Press ok to Continue ...");
+        let age = window.prompt("Enter Your Age ");
+        if (age < 18) {
+            window.alert("you Must have age  [ 18 ]  to Visit the Page");
+            window.close();
+        }
+    </script>
+</body>
+
+</html>
