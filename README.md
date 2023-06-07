@@ -1,2 +1,2 @@
-# HTML
-This reposiroty is used to store HTML  program with some examples 
+# HTML #CSS #JAVASCRIPT
+This reposiroty is used to store HTML,CSS,JAVSCRIPT program'S with some examples in this Repository...
